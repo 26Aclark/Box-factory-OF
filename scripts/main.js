@@ -1,6 +1,19 @@
+
+// -----main counter or "total"-----
+let counter = 0;
+setInterval(function(){ 
+  counter = per_second + counter; 
+}, 1005);
+setInterval(function(){ 
+  getElementById('boxes').innerText = counter; 
+}, 1006);
+document.getElementById('main_button').onclick = () => {
+    counter++;
+    document.getElementById('boxes').innerText = counter;
+  };
 //---menu controller---.start
   // _______Upgrades menu______.show
-  document.getElementById('upgrades_button').onclick = show_Upgrades_menu
+document.getElementById('upgrades_button').onclick = show_Upgrades_menu
   function show_Upgrades_menu(){
     document.getElementById("Upgrades").style.visibility= "visible";
   }
