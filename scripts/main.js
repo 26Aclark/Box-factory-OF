@@ -1,16 +1,10 @@
-
 // -----main counter or "total"-----
 let counter = 0;
-setInterval(function(){ 
-  counter = per_second + counter; 
-}, 1005);
-setInterval(function(){ 
-  getElementById('boxes').innerText = counter; 
-}, 1006);
-document.getElementById('main_button').onclick = () => {
-    counter++;
+document.getElementById('main_button-2').onclick = () => {
+    counter = counter + (1);
     document.getElementById('boxes').innerText = counter;
   };
+  
 //---menu controller---.start
   // _______Upgrades menu______.show
 document.getElementById('upgrades_button').onclick = show_Upgrades_menu
@@ -35,12 +29,6 @@ document.getElementById('settings_button_closing').onclick = hide_Settings_menu
 //---menu controller---.end
 //---per-second controller---.start
 let per_second = 0;
-setInterval(function(){ 
-  function calling_addings(){
-    per_second = dwarfs_math + per_second;
-    document.getElementById('per-second').innerText = per_second;
-  };   
-}, 1000);
 //---per-second controller---.end
 //---Dwafs upgrade contrroler---.start
 let dwarfs = 0;
@@ -49,9 +37,6 @@ document.getElementById('dwarfs_purchase').onclick = () => {
     dwarfs = dwarfs + 1;
     document.getElementById('amount_of_dwarfs').innerText = dwarfs;
   };
-  function dwarfs_math(per_second){
-    dwarfs * 2
-  }; 
 //---Dwarfs upgrade controller---.end
 //---Boxes upgrade controller---.start
   let boxes_a_second = 0;
@@ -69,3 +54,15 @@ document.getElementById('more_boxes').onclick = () => {
     document.getElementById('amount_of_more_boxes').innerText = more_boxes;
   };
 //---More Boxes upgrade controller---.end
+//--- ANIMATION-PLAYSTATE-CONTINUE-IF-ALREDY-ACTIVE ---//
+//.fill
+//.fill
+//.fill
+//.fill
+//.fill
+//.fill
+//.drill
+//--- ANIMATION-PLAYSTATE-CONTINUE-IF-ALREDY-ACTIVE ---//
+//play on load
+//"//start
+
